@@ -1,0 +1,219 @@
+:root{
+    --white: #FFFFFF;
+    --gray: #D1D5DB;
+    --light-gray: #DFDDDD;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #0E0E0E;
+    font-family: "Inter", sans-serif;
+    position: relative;
+}
+
+.container {
+    width: 550px;
+    background-color: var(--white);
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("images/andre-tan-THJJRUhNlEc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 520px;
+    height: 208px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, a{
+    color: var(--white);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+/* search inputs */
+.input-search-bar {
+    margin-right: auto; 
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+.search-bar-container{
+    position: absolute;
+    top: 190px;
+    margin-left:1em;
+}
+
+input[type=text]{
+    padding: 12px;
+    line-height: 10px;
+    width: 342px;
+    border-bottom: 1px solid var(--gray);
+    border-left: none;
+    border-right: 1px solid var(--gray);
+    border-top: none;
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+
+.btn {
+    padding: 12px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 6px 6px 0px;
+    border-bottom: 1px solid var(--gray);
+    border-right: 1px solid var(--gray);
+}
+
+.icon-glass{
+    color: #9CA3AF;
+    font-size: 1.15rem;
+    padding-bottom: 13px;
+    padding-top: 8px;
+    padding-left: 5px;
+    background-color: var(--white);
+    margin-right: -5px;
+    border-radius: 6px 0px 0px 6px;
+    border-left: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+}
+
+.display-area, .display-area-watchlist {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    overflow: scroll;
+}
+
+.display-area-watchlist {
+    justify-content:flex-start;
+}
+
+.error {
+    font-size: 1.125rem;
+    color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 380px;
+    text-align: center;
+}
+
+.saved-movies{
+    margin-top: 2em;
+}
+
+/* icon styling */
+.film-icon{
+    color: var(--light-gray);
+    font-size: 4.375rem;
+    margin: 0 auto;
+}
+
+.explore {
+    font-weight: 700;
+    font-size: 1.125em;
+    color: var(--light-gray);
+    text-align: center;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+/* color for the font awesome icons */
+
+i {
+    color: #363636;
+}
+
+.movie-card {
+    display: flex;
+    margin: 0 auto 1em auto;
+    align-items: center;
+    border-bottom: 1.5px solid #E5E7EB;
+    padding: 1em;
+}
+
+.movie-contents {
+    align-self: center;
+    padding-bottom: 2em;
+}
+
+.movie-poster {
+    height: 149px;
+    margin-right: 1em;
+    padding-bottom: 1em;
+}
+
+.movie-data{
+    font-size: 0.725rem;
+    font-weight: 400;
+}
+
+.movie-title{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.movie-plot {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #6B7280;
+}
+
+.movie-rating{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.fa-circle-plus, .fa-circle-check, .fa-circle-minus{
+    padding-left: 1em;
+    padding-right: 0.25em;
+    cursor: pointer;
+}
+
+span {
+    padding-right: 1em;
+}
+
+.active {
+    border-bottom: 3px solid var(--white);
+}
+
+.add-movies{
+    padding: 0;
+    margin: 0;
+}
+
+.fa-circle-check{
+    color: green;
+    cursor: not-allowed;
+}
